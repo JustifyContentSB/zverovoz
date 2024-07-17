@@ -1,0 +1,116 @@
+@import "partials";
+
+.section {
+    overflow: hidden;
+    padding: 104px 0 112px;
+    border: 1px solid transparent;
+    border-radius: var(--large-radius);
+
+    &--bordered {
+        border-color: $border;
+    }
+
+    &__header {
+        position: relative;
+        z-index: 5;
+
+        display: flex;
+        align-items: flex-start;
+
+        margin-bottom: 80px;
+    }
+
+    &__title {
+        flex-grow: 1;
+
+        margin-right: 104px;
+        margin-bottom: 0;
+
+        font-family: $Kyiv;
+        font-size: 72px;
+        font-weight: 400;
+        line-height: 130%;
+        text-transform: uppercase;
+    }
+
+    &__text {
+        flex-shrink: 0;
+
+        max-width: 495px;
+        padding-top: 10px;
+
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 150%;
+    }
+
+    @include ms(xxl) {
+        padding: 80px 0;
+
+        &__header {
+            margin-bottom: 60px;
+        }
+
+        &__title {
+            font-size: 56px;
+        }
+
+        &__text {
+            font-size: 20px;
+        }
+    }
+
+    @include ms(xl) {
+        padding: 60px 0;
+
+        &__header {
+            display: block;
+            margin-bottom: 50px;
+        }
+
+        &__title {
+            margin: 0;
+            margin-bottom: 16px;
+            font-size: 46px;
+        }
+
+        &__text {
+            padding-top: 0;
+            font-size: 18px;
+        }
+    }
+
+    @include ms(lg) {
+        padding: 50px 0;
+
+        &__title {
+            font-size: 40px;
+        }
+    }
+
+    @include ms(md) {
+        padding: 30px 0;
+
+        &__header {
+            margin-bottom: 32px;
+        }
+
+        &__title {
+            font-size: 36px;
+        }
+    }
+
+    @include ms(sm) {
+        padding: 24px 0;
+
+        &__title {
+            margin-bottom: 8px;
+            font-size: 32px;
+        }
+
+        &__text {
+            font-size: 16px;
+            line-height: 140%;
+        }
+    }
+}

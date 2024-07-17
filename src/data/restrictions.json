@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "img": "images/restrictions/restrictions-01.jpg",
+        "title": "Больные",
+        "text": "Животные с признаками вирусных или иных заболеваний"
+    },
+    {
+        "id": 2,
+        "img": "images/restrictions/restrictions-02.jpg",
+        "title": "Малыши",
+        "text": "Слишком маленькие котята или щенки"
+    },
+    {
+        "id": 3,
+        "img": "images/restrictions/restrictions-03.jpg",
+        "title": "Агрессивные",
+        "text": "Животные которые находятся в состоянии агрессивности"
+    },
+    {
+        "id": 4,
+        "img": "images/restrictions/restrictions-04.jpg",
+        "title": "Кормящие",
+        "text": "Питомцы, недавно ставшие мамами, кормящие"
+    }
+]

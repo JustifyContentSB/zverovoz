@@ -1,0 +1,25 @@
+{
+    "root": true,
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "node": true,
+        "es2021": true,
+        "jquery": true
+    },
+    "parserOptions": {
+        "ecmaVersion": 2022,
+        "sourceType": "module"
+    },
+    "extends": ["eslint:recommended", "prettier"],
+    "rules": {
+        "no-console": "error",
+        "no-alert": "error",
+        "no-prototype-builtins": "off",
+        "camelcase": "error", // Переменные в camelCase формате
+        "eqeqeq": "error", // Только '===' в сравнениях
+        "max-params": ["error", 4],
+        "no-empty-function": "error",
+        "no-var": "error"
+    }
+}

@@ -1,0 +1,15 @@
+:root {
+    --large-radius: 64px;
+
+    @include ms(xl) {
+        --large-radius: 50px;
+    }
+
+    @include ms(lg) {
+        --large-radius: 40px;
+    }
+
+    @include ms(md) {
+        --large-radius: 32px;
+    }
+}

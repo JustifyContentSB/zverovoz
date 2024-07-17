@@ -1,0 +1,98 @@
+[
+    {
+        "id": 1,
+        "icon": "images/partners/partners-01.png",
+        "name": "Pegasus",
+        "type": "Перевозчик"
+    },
+    {
+        "id": 2,
+        "icon": "images/partners/partners-02.png",
+        "name": "Taxi4Pet's",
+        "type": "Перевозчик"
+    },
+    {
+        "id": 3,
+        "icon": "images/partners/partners-03.png",
+        "name": "Fast Line",
+        "type": "Перевозчик"
+    },
+    {
+        "id": 4,
+        "icon": "images/partners/partners-04.png",
+        "name": "DOG-ИМПЕРИЯ",
+        "type": "Перевозчик"
+    },
+    {
+        "id": 5,
+        "icon": "images/partners/partners-05.png",
+        "name": "Petsend",
+        "type": "Перевозчик"
+    },
+    {
+        "id": 6,
+        "icon": "images/partners/partners-06.png",
+        "name": "ХВОСТЫ",
+        "type": "Перевозчик"
+    },
+    {
+        "id": 7,
+        "icon": "images/partners/partners-07.png",
+        "name": "PDS",
+        "type": "Перевозчик"
+    },
+    {
+        "id": 8,
+        "icon": "images/partners/partners-08.png",
+        "name": "Taxi4Pet's",
+        "type": "Перевозчик"
+    },
+    {
+        "id": 9,
+        "icon": "images/partners/partners-09.png",
+        "name": "UK LTD",
+        "type": "Перевозчик"
+    },
+    {
+        "id": 10,
+        "icon": "images/partners/partners-10.png",
+        "name": "Animals Express",
+        "type": "Перевозчик"
+    },
+    {
+        "id": 11,
+        "icon": "images/partners/partners-11.png",
+        "name": "PETTRAVEL",
+        "type": "Перевозчик"
+    },
+    {
+        "id": 12,
+        "icon": "images/partners/partners-12.png",
+        "name": "Animal Trips",
+        "type": "Перевозчик"
+    },
+    {
+        "id": 13,
+        "icon": "images/partners/partners-13.png",
+        "name": "Удачный полет",
+        "type": "Перевозчик"
+    },
+    {
+        "id": 14,
+        "icon": "images/partners/partners-14.png",
+        "name": "Улетный пёс",
+        "type": "Перевозчик"
+    },
+    {
+        "id": 15,
+        "icon": "images/partners/partners-15.png",
+        "name": "Animal Voyage",
+        "type": "Перевозчик"
+    },
+    {
+        "id": 16,
+        "icon": "images/partners/partners-16.png",
+        "name": "PetTrip",
+        "type": "Перевозчик"
+    }
+]

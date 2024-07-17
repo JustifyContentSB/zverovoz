@@ -1,0 +1,22 @@
+<div class="routes__slide"@@if(context.location) {data-location="@@location"}>
+    <div class="routes__main">
+        <div class="routes__content">
+            <div class="routes__photo">
+                <img class="routes__photo-desktop" src="images/icons/empty.png" data-src="images/routes/animal-0@@id.jpg" alt="@@name" width="132" height="170">
+                <img class="routes__photo-mob" src="images/icons/empty.png" data-src="images/routes/animal-mob-0@@id.jpg" alt="@@name" width="404" height="228">
+            </div>
+        </div>
+        <div class="routes__info">
+            <ul class="routes__list">
+                <li>Кличка: @@name</li>
+                <li>Дата: @@date</li>
+                <li>Транспорт: @@transport</li>
+                <li>Маршрут: @@route</li>
+            </ul>
+            <div class="routes__bottom">
+                <p>Цена:</p>
+                <p class="routes__price">@@price ₽</p>
+            </div>
+        </div>
+    </div>
+</div>

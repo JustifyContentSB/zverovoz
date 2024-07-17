@@ -1,0 +1,335 @@
+@import "partials";
+
+.work {
+    &__inner {
+        position: relative;
+    }
+
+    &__content {
+        position: relative;
+    }
+
+    &__img {
+        position: absolute;
+        top: -295px;
+        right: -16px;
+    }
+
+    &__list {
+        counter-reset: num;
+
+        position: relative;
+        z-index: 5;
+
+        display: grid;
+        grid-gap: 54px;
+        grid-template-columns: repeat(3, minmax(326px, 326px));
+        justify-content: space-between;
+
+        margin-bottom: 128px;
+    }
+
+    &__item {
+        will-change: backdrop-filter;
+
+        position: relative;
+
+        padding: 32px 32px 50px;
+
+        background: rgba(201, 227, 243, 0.3);
+        backdrop-filter: blur(20px);
+        border: 1px solid $white;
+        border-radius: 32px;
+
+        @include margin-bottom(40px);
+
+        &::before {
+            content: counter(num);
+            counter-increment: num;
+
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+
+            width: 64px;
+            height: 64px;
+
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 130%;
+            color: $black;
+            letter-spacing: 0.01em;
+
+            background: rgba(201, 227, 243, 0.3);
+            backdrop-filter: blur(20px);
+            border: 2px solid $white;
+            border-radius: 50%;
+        }
+
+        @include icomoon(arrow-step, after) {
+            position: absolute;
+            top: 50%;
+            right: -42%;
+            transform: translateY(-50%);
+
+            font-size: 30px;
+            color: $black;
+
+            opacity: 0;
+
+            transition: opacity 0.5s ease;
+        }
+
+        &:nth-child(3n)::after {
+            display: none;
+        }
+
+        &.is-active {
+            &::after {
+                opacity: 1;
+            }
+        }
+    }
+
+    &__icon {
+        width: 120px;
+        height: 120px;
+    }
+
+    &__info {
+        @include margin-bottom(16px);
+    }
+
+    &__title {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 130%;
+        letter-spacing: 0.01em;
+    }
+
+    &__text {
+        line-height: 130%;
+        letter-spacing: 0.01em;
+    }
+
+    &__booking {
+        width: 100%;
+        max-width: 1012px;
+
+        /* stylelint-disable */
+        &-header {
+            @extend .section__header;
+        }
+
+        &-text {
+            display: none;
+
+            @extend .section__text;
+        }
+        /* stylelint-enable */
+    }
+
+    @include ms(xxl) {
+        &__list {
+            margin-bottom: 80px;
+        }
+
+        &__item {
+            padding: 26px 26px 40px;
+
+            @include margin-bottom(22px);
+
+            &::before {
+                width: 56px;
+                height: 56px;
+            }
+
+            &::after {
+                right: -32%;
+                font-size: 24px;
+            }
+        }
+
+        &__icon {
+            width: 100px;
+            height: 100px;
+        }
+    }
+
+    @media screen and (max-width: 1365px) {
+        &__list {
+            margin-bottom: 60px;
+        }
+
+        &__item {
+            &::after {
+                display: none;
+            }
+        }
+    }
+
+    @include ms(xl) {
+        &__list {
+            grid-template-columns: repeat(3, minmax(246px, 326px));
+        }
+
+        &__booking {
+            &-title {
+                margin-bottom: 32px;
+            }
+
+            &-text {
+                display: block;
+            }
+        }
+
+        &__img {
+            max-width: 600px;
+
+            img {
+                max-width: none;
+            }
+        }
+    }
+
+    @include ms(lg) {
+        &__list {
+            grid-gap: 32px;
+            grid-template-columns: repeat(2, minmax(246px, 50%));
+            margin-bottom: 50px;
+        }
+
+        &__icon {
+            width: 88px;
+            height: 88px;
+        }
+
+        &__title {
+            font-size: 22px;
+        }
+
+        &__text {
+            font-size: 16px;
+        }
+
+        &__img {
+            top: -90px;
+            max-width: 710px;
+        }
+    }
+
+    @include ms(md) {
+        &__list {
+            overflow: -moz-scrollbars-none;
+            overflow-x: auto;
+            display: flex;
+            grid-gap: 0;
+
+            margin-bottom: 32px;
+            padding: 32px 20px 24px;
+
+            -ms-overflow-style: none;
+
+            @include margin-right(16px);
+
+            &::-webkit-scrollbar {
+                width: 0;
+                height: 0;
+            }
+        }
+
+        &__item {
+            min-width: 270px;
+        }
+
+        &__img {
+            top: -50px;
+            max-width: 65%;
+
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+
+    @include ms(sm) {
+        &__list {
+            margin-bottom: 16px;
+            padding: 24px 16px 16px;
+        }
+
+        &__item {
+            min-width: 218px;
+            padding: 46px 10px;
+
+            &::before {
+                width: 48px;
+                height: 48px;
+            }
+        }
+
+        &__title {
+            font-size: 18px;
+        }
+
+        &__booking {
+            &-header {
+                margin-bottom: 16px;
+            }
+
+            &-title {
+                margin-bottom: 16px;
+                line-height: 130%;
+            }
+        }
+
+        &__img {
+            top: -100px;
+            max-width: 88%;
+
+            img {
+                width: auto;
+                max-width: none;
+                height: 493px;
+            }
+        }
+    }
+}
+
+.section {
+    &.section--work {
+        background: linear-gradient(
+            0deg,
+            rgba(148, 199, 233, 0.5) 0%,
+            rgba(200, 227, 243, 0.5) 47.39%,
+            rgba(200, 227, 243, 0.5) 95.82%
+        );
+
+        .section__header {
+            &:not(.work__booking-header) {
+                margin-bottom: 175px;
+
+                @include ms(xxl) {
+                    margin-bottom: 120px;
+                }
+
+                @media screen and (max-width: 1365px) {
+                    margin-bottom: 60px;
+                }
+
+                @include ms(lg) {
+                    margin-bottom: 50px;
+                }
+
+                @include ms(md) {
+                    margin-bottom: 32px;
+                }
+            }
+        }
+    }
+}

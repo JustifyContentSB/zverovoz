@@ -1,0 +1,21 @@
+@use "sass:color";
+
+@import "partials";
+
+.btn {
+    display: inline-block;
+
+    padding: $input-padding;
+
+    color: $white;
+
+    background-color: $primary;
+    border-radius: $input-radius;
+
+    @include transition(background-color);
+
+    @include hover() {
+        color: $white;
+        background-color: color.adjust($primary, $lightness: 2.5%);
+    }
+}

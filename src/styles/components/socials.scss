@@ -1,0 +1,62 @@
+@import "partials";
+
+.socials {
+    display: flex;
+    align-items: center;
+
+    @include margin-bottom(0);
+
+    &__list {
+        display: flex;
+        gap: 6px;
+        align-items: center;
+    }
+
+    &__btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 32px;
+        min-width: 32px;
+        height: 32px;
+
+        font-size: 16px;
+        color: $white;
+
+        background: #2f89ce;
+        border-radius: 50%;
+
+        @include hover() {
+            color: $white;
+            background: #c9e3f3;
+        }
+
+        &--whatsapp {
+            background: #48c95f;
+
+            @include hover() {
+                background: #a3ecc9;
+            }
+
+            .icon {
+                transform: translate(1px, 0);
+            }
+        }
+
+        &--viber {
+            background: #7c509a;
+
+            @include hover() {
+                background: #cea9ed;
+            }
+        }
+    }
+
+    &__text {
+        margin-right: 18px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 100%;
+    }
+}

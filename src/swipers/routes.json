@@ -1,0 +1,23 @@
+{
+    "slidesPerView": "auto",
+    "pagination": true,
+    "navigation": true,
+    "spaceBetween": 16,
+    "speed": 800,
+    "loop": true,
+    "autoplay": {
+        "delay": 12000
+    },
+    "breakpoints": {
+        "768": {
+            "spaceBetween": 20,
+            "slidesPerView": 2,
+            "slidesPerGroup": 2
+        },
+        "1200": {
+            "spaceBetween": 20,
+            "slidesPerView": 2,
+            "slidesPerGroup": 2
+        }
+    }
+}

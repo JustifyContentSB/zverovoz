@@ -1,0 +1,4 @@
+src/styles/partials/**/*.scss
+src/abstract/styles/**/*.scss
+src/styles/vendor/**/*.scss
+gulp/

@@ -1,0 +1,285 @@
+@import "partials";
+
+.form {
+    --input-color: #000000;
+
+    .hero__form & {
+        --input-color: #fff;
+
+        will-change: backdrop-filter;
+
+        padding: 30px 84px 36px;
+
+        background: rgba(0, 0, 0, 0.25);
+        backdrop-filter: blur(5px);
+        border-radius: 32px;
+    }
+
+    input,
+    textarea,
+    button {
+        font-variant-ligatures: none;
+        appearance: none;
+        outline: 0 !important;
+        box-shadow: none !important;
+
+        &[disabled],
+        &[readonly],
+        &.is-disabled {
+            pointer-events: none;
+            opacity: $disabled-opacity;
+        }
+    }
+
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"],
+    input[type="date"],
+    input[type="number"],
+    input[type="password"],
+    textarea {
+        display: block;
+
+        width: 100%;
+        min-height: 48px;
+        padding: $input-padding;
+
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 160%;
+        color: var(--input-color);
+
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid $input-border;
+
+        @include transition(border-color);
+
+        &:focus {
+            border-color: $primary;
+        }
+
+        &:-webkit-autofill {
+            color: $white;
+            transition: background-color 50000s ease-in-out 0s;
+            animation-name: onAutoFillStart;
+        }
+
+        &:not(:-webkit-autofill) {
+            animation-name: onAutoFillCancel;
+        }
+
+        &::placeholder {
+            font-size: 0;
+        }
+    }
+
+    input[type="file"] {
+        display: none;
+        visibility: hidden;
+    }
+
+    button {
+        border: 0;
+    }
+
+    select {
+        appearance: none;
+        background: transparent;
+        background-image: none;
+        border: 0 !important;
+        outline: 0;
+        box-shadow: none;
+
+        &::-ms-expand {
+            display: none;
+        }
+    }
+
+    &__control {
+        margin-bottom: 12px;
+    }
+
+    &__main {
+        display: grid;
+        grid-gap: 28px 20px;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+
+        width: 100%;
+        max-width: 1012px;
+    }
+
+    &__label {
+        cursor: text;
+        position: relative;
+        display: block;
+
+        &-text {
+            position: absolute;
+            top: 50%;
+            left: 24px;
+            transform: translateY(-50%);
+
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 160%;
+            color: #aabbcc;
+
+            transition: all 0.2s ease;
+
+            input.focused ~ &,
+            input:focus ~ &,
+            input.error ~ &,
+            input.valid ~ & {
+                transform: translateY(-150%);
+                font-size: 14px;
+
+                .modal & {
+                    transform: translateY(-120%);
+                }
+            }
+        }
+    }
+
+    &__btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    &__agree {
+        cursor: pointer;
+
+        position: relative;
+
+        display: flex;
+
+        padding-bottom: 12px;
+
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 100%;
+        color: #aabbcc;
+
+        &-checkbox {
+            position: relative;
+
+            display: inline-block;
+
+            width: 16px;
+            min-width: 16px;
+            height: 16px;
+            margin-right: 10px;
+            padding: 2px;
+
+            background: $white;
+            border-radius: 2px;
+
+            @include transition(all $duration);
+
+            @include icomoon(checkbox, after) {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+
+                font-size: 9px;
+                color: $white;
+
+                opacity: 0;
+
+                @include transition(opacity $duration);
+            }
+
+            input:checked ~ & {
+                background: #aabbcc;
+
+                &::after {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    &__bottom {
+        max-width: 324px;
+        margin-left: auto;
+    }
+
+    .error {
+        &:not(input) {
+            position: absolute;
+            top: calc(100% + 1px);
+            left: 0;
+
+            font-size: 14px;
+            color: #f94949;
+        }
+    }
+
+    @include ms(xl) {
+        .hero__form & {
+            padding: 30px;
+        }
+
+        &__main {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        &__bottom {
+            max-width: calc(50% - 10px);
+        }
+
+        &__label {
+            &-text {
+                font-size: 16px;
+            }
+        }
+
+        .error {
+            &:not(input) {
+                right: 0;
+                left: auto;
+            }
+        }
+    }
+
+    @include ms(md) {
+        &__main {
+            grid-gap: 8px;
+            grid-template-columns: 1fr;
+        }
+
+        &__btn {
+            margin: 24px 0 14px;
+        }
+
+        &__bottom {
+            max-width: 100%;
+        }
+
+        &__agree {
+            justify-content: center;
+            padding-bottom: 0;
+            line-height: 140%;
+
+            &-checkbox {
+                margin-top: 1px;
+                margin-right: 8px;
+            }
+        }
+
+        &__label {
+            &-text {
+                font-size: 14px;
+            }
+        }
+    }
+
+    @include ms(sm) {
+        &__agree {
+            max-width: 200px;
+            margin: 0 auto;
+        }
+    }
+}

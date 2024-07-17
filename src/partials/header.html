@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="ru"@@if(context.mode){ class="mode--@@mode"}>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <title>@@title</title>
+
+    <!-- css:main --><!-- /css:main -->
+    <!-- css:modules --><!-- /css:modules -->
+</head>
+
+<body class="page@@if(layout != ''){ page--@@layout}" data-preload>
+
+    <!-- Wrapper -->
+    <div class="wrapper">
+
+        <!-- Header -->
+        <header class="header">
+            <div class="header__inner container">
+                <div class="header__left">
+                    <a class="header__logo" href="#"><img src="images/icons/logo.svg" alt="логотип" width="32" height="32"><span>Зверовоз</span></a>
+                    <a class="header__burger" href="#">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                </div>
+                <div class="header__main">
+                    <div class="header__box">
+                        <nav class="header__nav">
+                            <ul class="header__nav-list">
+                                <li class="header__nav-item">
+                                    <a class="header__nav-link" href="#services">О нас</a>
+                                </li>
+                                <li class="header__nav-item">
+                                    <a class="header__nav-link" href="#transportation">Услуги</a>
+                                </li>
+                                <li class="header__nav-item">
+                                    <a class="header__nav-link" href="#routes">Маршруты</a>
+                                </li>
+                                <li class="header__nav-item">
+                                    <a class="header__nav-link" href="#work">Как работаем</a>
+                                </li>
+                                <li class="header__nav-item">
+                                    <a class="header__nav-link" href="#procedures">Процедуры</a>
+                                </li>
+                                <li class="header__nav-item">
+                                    <a class="header__nav-link" href="#restrictions">Условия</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="header__socials socials">
+                            <ul class="socials__list">
+                                <li class="socials__item">
+                                    <a class="socials__btn socials__btn--telegram" href="#">
+                                        <i class="icon icon-telegram"></i>
+                                    </a>
+                                </li>
+                                <li class="socials__item">
+                                    <a class="socials__btn socials__btn--whatsapp" href="#">
+                                        <i class="icon icon-whatsapp"></i>
+                                    </a>
+                                </li>
+                                <li class="socials__item">
+                                    <a class="socials__btn socials__btn--viber" href="#">
+                                        <i class="icon icon-viber"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="header__manage">
+                            <a class="header__phone btn" href="tel:+71223455677"><span>+7 122 345-56-77</span></a>
+                            <a class="btn" href="#modal-order" data-fancybox><span>Написать</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Navbar -->
+        <aside class="navigation">
+            <div class="navigation__wrapper">
+                <div class="navigation__content">
+                    <div class="navigation__top">
+                        <a class="navigation__logo" href="#"><img src="images/icons/logo.svg" alt="логотип" width="32" height="32"><span>Зверовоз</span></a>
+                        <a class="hamburger" href="#"></a>
+                    </div>
+                    <div class="navigation__nav">
+                        <ul class="navigation__nav-list">
+                            <li class="navigation__nav-item">
+                                <a class="btn" href="#">+7 122 345-56-77</a>
+                            </li>
+                            <li class="navigation__nav-item">
+                                <a class="btn" href="#">Написать</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="navigation__manage"></div>
+                    <div class="navigation__bottom">
+                        <div class="navigation__socials socials">
+                            <ul class="socials__list">
+                                <li class="socials__item">
+                                    <a class="socials__btn socials__btn--telegram" href="#">
+                                        <i class="icon icon-telegram"></i>
+                                    </a>
+                                </li>
+                                <li class="socials__item">
+                                    <a class="socials__btn socials__btn--whatsapp" href="#">
+                                        <i class="icon icon-whatsapp"></i>
+                                    </a>
+                                </li>
+                                <li class="socials__item">
+                                    <a class="socials__btn socials__btn--viber" href="#">
+                                        <i class="icon icon-viber"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main -->
+        <main class="main">

@@ -1,0 +1,22 @@
+{
+    "slidesPerView": 1,
+    "pagination": true,
+    "navigation": true,
+    "spaceBetween": 10,
+    "speed": 1000,
+    "effect": "fade",
+    "loop": true,
+    "fadeEffect": {
+        "crossFade": true
+    },
+    "breakpoints": {
+        "992": {
+            "spaceBetween": 30,
+            "slidesPerView": "auto"
+        },
+        "1200": {
+            "spaceBetween": 30,
+            "slidesPerView": "auto"
+        }
+    }
+}

@@ -1,0 +1,2 @@
+@@for(var i = 0, ids = id; i < 1; i++) {
+<@@if(context.tag){@@tag}@@if(!context.tag){a} class="btn@@if(context.id){`+['', ...ids.map(id => `btn--${id}`)].join(' ')+`}"@@if(context.href && context.tag !== 'button'){ href=@@href} @@if(context.attrs){`+attrs.map(attr => attr).join(' ')+`}>@@text</@@if(context.tag){@@tag}@@if(!context.tag){a}>}

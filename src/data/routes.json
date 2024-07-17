@@ -1,0 +1,75 @@
+[
+    {
+        "id": 1,
+        "photo": "",
+        "name": "Рокки",
+        "date": "07.08/07.10",
+        "transport": "Автобус",
+        "route": "Санкт-Петербург — Москва",
+        "price": "1500",
+        "location": "location-1"
+    },{
+        "id": 2,
+        "photo": "",
+        "name": "Карамель",
+        "date": "02.01/02.03",
+        "transport": "Автобус",
+        "route": "Самара — Казань",
+        "price": "1200",
+        "location": "location-1"
+    },{
+        "id": 3,
+        "photo": "",
+        "name": "Люк",
+        "date": "02.01/02.03",
+        "transport": "Поезд",
+        "route": "Москва — Минск",
+        "price": "2400",
+        "location": "location-2"
+    },{
+        "id": 4,
+        "photo": "",
+        "name": "Грейси",
+        "date": "02.13/02.16",
+        "transport": "Поезд",
+        "route": "Бугуруслан — Ташкент",
+        "price": "800",
+        "location": "location-2"
+    },{
+        "id": 5,
+        "photo": "",
+        "name": "Феликс",
+        "date": "10.02/10.04",
+        "transport": "Самолет",
+        "route": "Москва — Пекин",
+        "price": "32 800",
+        "location": "location-3"
+    },{
+        "id": 6,
+        "photo": "",
+        "name": "Луна и Макс",
+        "date": "02.01/02.03",
+        "transport": "Самолет",
+        "route": "Самара — Пекин",
+        "price": "51 000",
+        "location": "location-3"
+    },{
+        "id": 7,
+        "photo": "",
+        "name": "Джек",
+        "date": "07.08/07.10",
+        "transport": "Самолет",
+        "route": "Санкт-Петербург — Лондон",
+        "price": "41 300",
+        "location": "location-4"
+    },{
+        "id": 8,
+        "photo": "",
+        "name": "Фредди",
+        "date": "02.01/02.03",
+        "transport": "Самолет",
+        "route": "Казань — Париж",
+        "price": "23 100",
+        "location": "location-4"
+    }
+]

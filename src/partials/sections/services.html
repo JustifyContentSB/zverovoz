@@ -1,0 +1,18 @@
+<!-- Services -->
+<section class="section section--bordered section--services" id="services">
+    <div class="section__wrapper container">
+        <div class="section__header">
+            <h2 class="section__title">Спектр услуг по перевозке</h2>
+            <p class="section__text">Предоставляем услуги по перевозке питомцев как по России, так и за её пределами, в том числе авиаперелеты и зоотакси.</p>
+        </div>
+        <div class="section__content">
+            <div class="services">
+                <div class="services__inner">
+                    <div class="services__list">
+                        @@loop('items/services.html', 'data/services.json')
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

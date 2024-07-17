@@ -1,0 +1,34 @@
+<!-- Work -->
+<section class="section section--work" id="work">
+    <div class="section__wrapper">
+        <div class="section__header container">
+            <h2 class="section__title">Как мы <br> работаем</h2>
+            <p class="section__text">У нас большой опыт в перевозки животных по всему миру. Мы привозим питомцев прямо к вашему дому!</p>
+        </div>
+        <div class="section__content">
+            <div class="work">
+                <div class="work__inner">
+                    <div class="work__content container">
+                        <div class="work__img">
+                            <img src="images/icons/empty.png" data-src="images/work/cat.png" alt="кот" width="1003" height="918">
+                        </div>
+                    </div>
+                    <ol class="work__list container">
+                        @@loop('items/work.html', 'data/work.json')
+                    </ol>
+                    <div class="work__bottom container">
+                        <div class="work__booking">
+                            <div class="work__booking-header">
+                                <h2 class="work__booking-title title">Хотите бронировать место?</h2>
+                                <p class="work__booking-text">У нас большой опыт в перевозки животных по всему миру. Мы привозим питомцев прямо к вашему дому!</p>
+                            </div>
+                            <div class="work__booking-form">
+                                @@include('components/form.html')
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

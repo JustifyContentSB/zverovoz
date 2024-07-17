@@ -1,0 +1,51 @@
+@import "partials";
+
+.main {
+    flex-grow: 1;
+
+    @include margin-bottom(32px);
+
+    @include ms(xxl) {
+        @include margin-bottom(28px);
+    }
+
+    @include ms(lg) {
+        @include margin-bottom(24px);
+    }
+
+    @include ms(md) {
+        @include margin-bottom(16px);
+    }
+}
+
+.wrapper {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    min-height: 100%;
+    padding: 20px;
+
+    @include margin-bottom(32px);
+
+    @include ms(xxl) {
+        @include margin-bottom(28px);
+    }
+
+    @include ms(xl) {
+        padding: 16px;
+    }
+
+    @include ms(lg) {
+        @include margin-bottom(24px);
+    }
+
+    @include ms(md) {
+        @include margin-bottom(16px);
+    }
+
+    @include ms(sm) {
+        padding: 18px 10px;
+    }
+}

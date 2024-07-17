@@ -1,0 +1,26 @@
+<!-- Partners -->
+<section class="section section--bordered section--partners">
+    <div class="section__wrapper container">
+        <div class="section__header">
+            <h2 class="section__title">Наши <br> партнеры</h2>
+            <p class="section__text">Мы гордимся, что наши перевозчики заботится о комфорте и безопасности каждого питомца.</p>
+        </div>
+        <div class="section__content">
+            <div class="partners">
+                <div class="partners__inner">
+                    @@include('components/swiper.html', {
+                        "id": "partners",
+                        "template": "partners"
+                    })
+
+                    <div class="partners__content">
+                        <h2 class="partners__content-title title">Счастливые клиенты</h2>
+                        <ul class="partners__gallery">
+                            @@loop('items/gallery.html', 'data/gallery.json')
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,41 @@
+<!-- Routes -->
+<section class="section section--routes" id="routes">
+    <div class="section__wrapper container">
+        <div class="section__header">
+            <h2 class="section__title">Примеры маршрутов</h2>
+            <p class="section__text">Мы перевозим ваших домашних питомцев в удобных, специально оборудованных местах.</p>
+        </div>
+        <div class="section__content">
+            <div class="routes">
+                <div class="routes__inner">
+                    <div class="routes__tabs">
+                        <ul class="routes__tabs-list">
+                            <li class="routes__tabs-item">
+                                <a class="routes__tabs-btn is-active" href="#location-1" data-location="location-1">Россия</a>
+                            </li>
+                            <li class="routes__tabs-item">
+                                <a class="routes__tabs-btn" href="#location-2" data-location="location-2">Ближнее зарубежье</a>
+                            </li>
+                            <li class="routes__tabs-item">
+                                <a class="routes__tabs-btn" href="#location-3" data-location="location-3">Китай</a>
+                            </li>
+                            <li class="routes__tabs-item">
+                                <a class="routes__tabs-btn" href="#location-4" data-location="location-4">Европа</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="routes__cities cities">
+                        @@include('components/swiper.html', {
+                            "id": "cities",
+                            "template": "cities"
+                        })
+                    </div>
+                    @@include('components/swiper.html', {
+                        "id": "routes",
+                        "template": "routes"
+                    })
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

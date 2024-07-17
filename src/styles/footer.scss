@@ -1,0 +1,219 @@
+@import "partials";
+
+.footer {
+    background: #c9e3f3;
+    border-radius: var(--large-radius);
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 50px;
+        padding-bottom: 66px;
+    }
+
+    &__left {
+        transform: translateY(-10px);
+        flex-basis: 324px;
+
+        @include margin-bottom(2px);
+    }
+
+    &__logo {
+        display: inline-flex;
+        align-items: center;
+
+        font-size: 48px;
+        font-weight: 600;
+        color: $black;
+        text-transform: uppercase;
+
+        @include hover() {
+            color: inherit;
+        }
+
+        img {
+            flex-shrink: 0;
+            margin-right: 4px;
+        }
+    }
+
+    &__menu {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+
+        &-link {
+            display: inline-block;
+
+            padding: 12px 8px;
+
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 100%;
+            color: $black;
+            text-transform: uppercase;
+
+            transition: all $transition-duration ease;
+
+            &.is-active {
+                text-decoration: underline;
+                text-shadow: 0.4px 0 0 $black;
+            }
+
+            @include hover() {
+                &:not(.is-active) {
+                    color: #4db87d;
+                    text-shadow: 0.4px 0 0 #4db87d;
+                }
+            }
+        }
+    }
+
+    &__middle {
+        flex-basis: 400px;
+    }
+
+    &__right {
+        flex-basis: 270px;
+
+        @include margin-bottom(16px);
+    }
+
+    &__manage {
+        @include margin-bottom(16px);
+
+        &-mob {
+            display: none;
+        }
+
+        .btn {
+            width: 100%;
+        }
+    }
+
+    &__text {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 160%;
+    }
+
+    @include ms(xl) {
+        &__inner {
+            padding-bottom: 50px;
+
+            @include margin-right(20px);
+        }
+
+        &__left {
+            flex-basis: 278px;
+        }
+
+        &__logo {
+            font-size: 37px;
+            line-height: 100%;
+
+            img {
+                width: 52px;
+                height: 52px;
+                margin-right: 16px;
+            }
+        }
+
+        &__right {
+            flex-basis: 240px;
+        }
+
+        &__text {
+            font-size: 16px;
+            line-height: 140%;
+        }
+    }
+
+    @include ms(lg) {
+        &__inner {
+            display: block;
+
+            @include margin-right(0);
+            @include margin-bottom(32px);
+        }
+
+        &__middle {
+            margin-bottom: 22px;
+        }
+
+        &__menu {
+            &-link {
+                padding: 8px;
+            }
+        }
+
+        &__manage {
+            display: grid;
+            grid-gap: 20px;
+            grid-template-columns: 1fr 1fr;
+
+            @include margin-bottom(0);
+
+            &-item {
+                display: flex;
+            }
+
+            &-desktop {
+                display: none;
+            }
+
+            &-mob {
+                display: block;
+            }
+        }
+
+        &__socials {
+            justify-content: center;
+        }
+
+        &__left {
+            max-width: 270px;
+        }
+
+        &__text {
+            padding-left: 70px;
+            font-size: 14px;
+        }
+    }
+
+    @include ms(sm) {
+        &__inner {
+            padding-top: 24px;
+            padding-bottom: 24px;
+        }
+
+        &__menu {
+            &-link {
+                font-size: 14px;
+            }
+        }
+
+        &__manage {
+            grid-gap: 8px;
+            grid-template-columns: 1fr;
+        }
+
+        &__socials {
+            flex-direction: column;
+            max-width: 146px;
+            margin: 0 auto;
+            text-align: center;
+
+            .socials {
+                &__text {
+                    margin: 0;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+
+        &__text {
+            margin-top: -6px;
+        }
+    }
+}

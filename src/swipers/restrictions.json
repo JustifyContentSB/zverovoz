@@ -1,0 +1,19 @@
+{
+    "slidesPerView": "auto",
+    "pagination": true,
+    "navigation": true,
+    "spaceBetween": 16,
+    "speed": 500,
+    "breakpoints": {
+        "575": {
+            "slidesPerView": 2
+        },
+        "800": {
+            "spaceBetween": 20,
+            "slidesPerView": 3
+        },
+        "1200": {
+            "slidesPerView": 4
+        }
+    }
+}

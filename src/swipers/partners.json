@@ -1,0 +1,36 @@
+{
+    "slidesPerView": "auto",
+    "pagination": true,
+    "navigation": true,
+    "spaceBetween": 10,
+    "speed": 500,
+    "grid": {
+        "rows": 2
+    },
+    "breakpoints": {
+        "575": {
+            "spaceBetween": 20,
+            "slidesPerView": 3
+        },
+        "768": {
+            "spaceBetween": 20,
+            "slidesPerView": 4
+        },
+        "992": {
+            "spaceBetween": 20,
+            "slidesPerView": 5
+        },
+        "1200": {
+            "spaceBetween": 20,
+            "slidesPerView": 6
+        },
+        "1400": {
+            "spaceBetween": 20,
+            "slidesPerView": 7
+        },
+        "1440": {
+            "spaceBetween": 20,
+            "slidesPerView": 8
+        }
+    }
+}

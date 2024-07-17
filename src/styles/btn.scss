@@ -1,0 +1,137 @@
+@use "sass:color";
+
+@import "partials";
+
+.btn {
+    position: relative;
+
+    overflow: hidden;
+    display: inline-block;
+
+    padding: 20px;
+
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 100%;
+    color: $white;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+
+    background: linear-gradient(90deg, rgba(133, 182, 214, 1) 0%, rgba(133, 182, 214, 1) 35%);
+    border-radius: $input-radius;
+
+    span {
+        position: relative;
+        z-index: 5;
+    }
+
+    &::before {
+        content: "";
+
+        position: absolute;
+        inset: 0;
+
+        opacity: 0;
+        background: linear-gradient(338deg, #92c7e9 0%, #b3d8ef 52%, #cfe6f4 100%);
+
+        transition: opacity 0.3s ease;
+    }
+
+    @include transition(background);
+
+    @include hover() {
+        color: $white;
+
+        &::before {
+            opacity: 1;
+        }
+    }
+
+    &--wide {
+        min-width: 280px;
+    }
+
+    &--small {
+        padding: 16px 27px 17px;
+        font-size: 16px;
+        border-radius: 8px;
+    }
+
+    &--icon {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding-right: 50px;
+
+        @include icomoon(arrow-right, after) {
+            position: absolute;
+            right: 10px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            width: 24px;
+            height: 24px;
+
+            font-size: 18px;
+            font-weight: 500;
+            color: $white;
+
+            @include transition(transform $duration * 2);
+        }
+    }
+
+    @include ms(xxl) {
+        padding: 18px;
+        font-size: 22px;
+
+        &--small {
+            padding: 16px 27px 17px;
+            font-size: 16px;
+        }
+
+        &--icon {
+            padding-right: 50px;
+        }
+    }
+
+    @include ms(xl) {
+        font-size: 20px;
+
+        &--small {
+            font-size: 16px;
+        }
+    }
+
+    @include ms(lg) {
+        font-size: 18px;
+
+        &--small {
+            font-size: 16px;
+        }
+    }
+
+    @include ms(md) {
+        padding: 16px;
+        font-size: 16px;
+        border-radius: 8px;
+
+        &--small {
+            font-size: 14px;
+        }
+
+        &--icon {
+            padding-right: 42px;
+            text-align: left;
+            border-radius: 14px;
+        }
+    }
+
+    @include ms(sm) {
+        &--wide {
+            min-width: 100%;
+        }
+    }
+}
